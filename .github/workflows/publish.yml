@@ -3,7 +3,9 @@ name: Publish NPM Package
 on:
   push:
     tags:
-      - '*'
+      # This tag will never exist, so the workflow will never run
+      # instead, the publish workflow that publishes to Auditorium's Github packages will run
+      - 'this-tag-will-never-exist-123456789'
 
 jobs:
   package:

@@ -219,7 +219,8 @@ const Flagsmith = class {
                     return Promise.reject(error)
                 });
         } else {
-            return this.getJSON(api + "flags/")
+            // NOTE: URL path must not include trailing slash
+            return this.getJSON(api + "flags")
                 .then((res) => {
                     return handleResponse({ flags: res as IFlagsmithResponse['flags'], traits:undefined })
                 })

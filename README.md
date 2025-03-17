@@ -1,9 +1,19 @@
+
+
+
 <img width="100%" src="https://github.com/Flagsmith/flagsmith/raw/main/static-files/hero.png"/>
 
-# Flagsmith Javascript Client
 
 [![npm version](https://badge.fury.io/js/flagsmith.svg)](https://badge.fury.io/js/flagsmith)
 [![](https://data.jsdelivr.com/v1/package/npm/flagsmith/badge)](https://www.jsdelivr.com/package/npm/flagsmith)
+
+# Flagsmith Javascript Client
+
+**This repository is a fork of [flagsmith-js-client](https://github.com/Flagsmith/flagsmith-js-client). Below are the modifications made to the original code:**
+
+- When fetching flags, the API URL provided in the `init` options is appended with `flags` instead of `flags/`.
+
+---
 
 The SDK clients for web and React Native for [https://www.flagsmith.com/](https://www.flagsmith.com/). Flagsmith allows you to manage feature flags and remote config across multiple projects, environments and organisations.
 

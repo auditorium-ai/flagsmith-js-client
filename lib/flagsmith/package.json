@@ -1,5 +1,5 @@
 {
-  "name": "flagsmith",
+  "name": "@auditorium-ai/flagsmith",
   "version": "9.0.5",
   "description": "Feature flagging to support continuous development",
   "main": "./index.js",

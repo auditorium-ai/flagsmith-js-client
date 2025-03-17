@@ -41,5 +41,6 @@ export default [
     generateConfig('./next-middleware.ts', './lib/flagsmith', 'next-middleware', ['./react.tsx', './index.react-native.ts']),
     generateConfig('./react.tsx', './lib/flagsmith', 'react', ['./index.ts', './types.ts', './isomorphic.ts', './index.react-native.ts']),
     generateConfig('./react.tsx', './lib/react-native-flagsmith', 'react', ['./index.ts', './types.ts', './isomorphic.ts', './index.react-native.ts']),
-    generateConfig('./index.react-native.ts', './lib/react-native-flagsmith', 'index', ['./react/**', './isomorphic.ts', './index.react-native.ts']),
+    // KEEP THIS COMMENTED OUT UNTIL WE HAVE AN AUDITORIUM REACT NATIVE PROJECT TO NEED IT (causes build to fail otherwise)
+    // generateConfig('./index.react-native.ts', './lib/react-native-flagsmith', 'index', ['./react/**', './isomorphic.ts', './index.react-native.ts']),
 ];
